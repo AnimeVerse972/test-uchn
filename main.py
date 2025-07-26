@@ -100,7 +100,6 @@ def upload_anime_step1(message):
     msg = bot.send_message(message.chat.id, "Anime nomini yozing (yoki /cancel):")
     bot.register_next_step_handler(msg, upload_anime_step2)
 
-ㅤㅤㅤKirito, [26.07.2025 7:18]
 def upload_anime_step2(message):
     if cancel_state.get(message.chat.id): return
     name = message.text.strip()
@@ -189,8 +188,7 @@ def update_anime_name(message, anime):
             break
     save_anime(data)
     bot.send_message(message.chat.id, f"✅ Nomi yangilandi: {new_name}")
-
-ㅤㅤㅤKirito, [26.07.2025 7:18]
+    
 def update_anime_code(message, anime):
     if cancel_state.get(message.chat.id): return
     new_code = message.text.strip()
