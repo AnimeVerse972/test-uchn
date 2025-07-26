@@ -3,8 +3,8 @@ import telebot
 import os
 from keep_alive import keep_alive  # Uptime uchun
 
-TOKEN = "TOKEN"
-ADMIN_IDS = [374014720, 301474139]
+TOKEN = os.getenv("TOKEN")
+ADMIN_IDS = [374014720, 301474139,6486825926]
 
 bot = telebot.TeleBot(TOKEN)
 ANIME_FILE = "anime.data.json"
